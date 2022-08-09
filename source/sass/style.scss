@@ -2,8 +2,6 @@
 // ---------------------------------
 
 @import "vendor/normalize";
-// Swiper 7.4.1
-// @import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -11,15 +9,18 @@
 @import "variables";
 @import "mixins";
 @import "global/fonts";
-@import "global/reboot";
+@import "global/global";
 @import "global/utils";
-@import "global/container";
 
 // Blocks
 // ---------------------------------
 
 @import "blocks/btn";
 @import "blocks/modal";
+@import "blocks/page";
+@import "blocks/title";
+@import "blocks/text";
+@import "blocks/header";
 
 // ---------------------------------
 

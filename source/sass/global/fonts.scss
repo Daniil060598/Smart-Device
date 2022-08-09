@@ -11,11 +11,27 @@
 
 @font-face {
   font-style: normal;
-  font-weight: 400;
-  font-family: "";
-
+  font-weight: 700;
+  font-family: "Roboto Condensed";
   font-display: swap;
-  src:
-    url("../fonts/.woff2") format("woff2"),
-    url("../fonts/.woff") format("woff");
+  src: url("../fonts/robotocondensed-bold.woff2") format("woff2"),
+    url("../fonts/robotocondensed-bold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto Condensed";
+  font-display: swap;
+  src: url("../fonts/robotocondensed-regular.woff2") format("woff2"),
+    url("../fonts/robotocondensed-regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "PT Mono";
+  font-display: swap;
+  src: url("../fonts/ptmono-regular.woff2") format("woff2"),
+    url("../fonts/ptmono-regular.woff2") format("woff");
 }

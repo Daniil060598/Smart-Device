@@ -1,0 +1,22 @@
+.social {
+
+}
+
+.social__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 40px);
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social__link {
+  padding: 5px;
+  transition: opacity  $trans-default;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}

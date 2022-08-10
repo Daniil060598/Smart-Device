@@ -1,38 +1,131 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>Smart Device</title>
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body class="page__body">
-    <div class="wrapper">
-      <header class="header">
-        <div class="header__wrapper">
-          <a>
-            <picture>
-              <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
-              <img class="header__logo logo" width="204" height="55" src="img/svg/logo.svg" alt="Логотип">
-            </picture>
-          </a>
-          <div class="header__contacts">
-            <a class="header__link header__link_email" href="mailto:info@sd.ru"><span>info@sd.ru</span></a>
-            <a class="header__link header__link_tel" href="tel:+74950005252"><span>+7 (495) 000 52 52</span></a>
-          </div>
-          <button class="header__button button">Заказать звонок</button>
-        </div>
-      </header>
-      <main>
-      </main>
-      <footer>
-      </footer>
-    </div>
 
-    <!-- Модалки -->
-    <!-- <div class="modal modal--preload" data-modal="feedback">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Описание проекта">
+  <title>Smart Device</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page__body">
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__wrapper">
+        <a>
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
+            <img class="header__logo logo" width="204" height="55" src="img/svg/logo.svg" alt="Логотип">
+          </picture>
+        </a>
+        <div class="header__contacts">
+          <a class="header__link header__link_email" href="mailto:info@sd.ru"><span>info@sd.ru</span></a>
+          <a class="header__link header__link_tel" href="tel:+74950005252"><span>+7 (495) 000 52 52</span></a>
+        </div>
+        <button class="header__button button">Заказать звонок</button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main-screen">
+        <div class="main-screen__wrapper">
+          <h1 class="main-screen__title title title_big">Печатные платы</h1>
+          <p class="main-screen__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <button class="main-screen__button button">Получить бесплатную консультацию</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__item footer__item_logo">
+          <a>
+            <img class="footer__logo logo" width="204" height="55" src="img/svg/logo.svg" alt="Логотип">
+          </a>
+          <div class="footer__social social">
+            <h3 class="visually-hidden">Социальные сети</h3>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__link-icon" width="30" height="30" role="img">
+                    <use xlink:href="img/sprite_auto.svg#pinterest"></use>
+                  </svg>
+                  <span class="visually-hidden">Мы в пайнтресте</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__link-icon" width="30" height="30" role="img">
+                    <use xlink:href="img/sprite_auto.svg#ok"></use>
+                  </svg>
+                  <span class="visually-hidden">Мы в одноклассниках</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__link-icon" width="30" height="30" role="img">
+                    <use xlink:href="img/sprite_auto.svg#vk"></use>
+                  </svg>
+                  <span class="visually-hidden">Мы в вконтакте</span>
+                </a>
+              </li>
+          </div>
+        </div>
+        <div class="footer__item footer__item_nav">
+          <input class="footer__accordion-input visually-hidden" type="radio" name="accordion" id="accordion-1">
+          <label class="footer__accordion-trigger" for="accordion-1">
+            <h3 class="footer__item-title">Разделы сайта</h3>
+          </label>
+          <span class="footer__accordion-mark"></span>
+          <div class="footer__accordion-content">
+            <nav class="footer__nav">
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a href="#">О Компаниии</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#">Продукты</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#">Производство печатных плат</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#">Монтаж печатных плат</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#">Комплектующие</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#">Доставка</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="footer__item footer__item_address">
+          <input class="footer__accordion-input visually-hidden" type="radio" name="accordion" id="accordion-2">
+          <label class="footer__accordion-trigger" for="accordion-2">
+            <h3 class="footer__item-title">Наш офис</h3>
+          </label>
+            <span class="footer__accordion-mark"></span>
+            <div class="footer__accordion-content">
+              <p class="footer__address">
+                г. Мытищи, Олимпийский проспект, д.10
+              </p>
+              <a class="footer__tel" href="tel:+74955894050">+7 (495) 589-40-50</a>
+              <a class="footer__tel" href="tel:+79253895829">+7 (925) 389-58-29</a>
+              <a class="footer__tel" href="tel:+79253647813">+7 (925) 364-78-13</a>
+            </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Модалки -->
+  <!-- <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
@@ -60,6 +153,7 @@
       </div>
     </div> -->
 
-    <script src="js/main.js"></script>
-  </body>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

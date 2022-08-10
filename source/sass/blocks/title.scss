@@ -10,6 +10,16 @@
     line-height: 94px;
     letter-spacing: 0.07em;
     text-transform: uppercase;
+
+    @include vp-1023 {
+      font-size: 64px;
+      line-height: 75px;
+    }
+
+    @include vp-767 {
+      font-size: 36px;
+      line-height: 42px;
+    }
   }
 
   &_small {

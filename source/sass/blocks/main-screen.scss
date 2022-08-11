@@ -13,16 +13,16 @@
   max-width: 1260px;
   min-height: 880px;
   margin: 0 auto;
-  padding: 185px 377px 35px 125px;
+  padding: 305px 377px 35px 125px;
 
   @include vp-1023 {
     min-height: 640px;
-    padding: 80px 50px 35px;
+    padding: 180px 50px 35px;
   }
 
   @include vp-767 {
     min-height: 560px;
-    padding: 80px 25px 35px;
+    padding: 150px 25px 35px;
   }
 }
 

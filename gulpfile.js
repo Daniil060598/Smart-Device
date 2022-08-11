@@ -31,7 +31,7 @@ const css = () => {
 };
 
 const js = () => {
-  return gulp.src(['source/js/main.js'])
+  return gulp.src(['source/js/*.js'])
       .pipe(gulp.dest('build/js'))
 };
 
@@ -50,7 +50,7 @@ const svgo = () => {
 };
 
 const sprite = () => {
-  return gulp.src('source/img/sprite/*.svg')
+  return gulp.src('source/img/sprite/**/*.svg')
       .pipe(svgstore({inlineSvg: true}))
       .pipe(rename('sprite_auto.svg'))
       .pipe(gulp.dest('build/img'));

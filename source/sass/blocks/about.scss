@@ -1,0 +1,61 @@
+.about {
+  display: flex;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 60px 20px 100px 0;
+
+  @include vp-1023 {
+    padding: 40px 50px 80px 46px;
+  }
+
+  @include vp-767 {
+    padding: 25px 25px 80px;
+  }
+}
+
+.about__img {
+  margin-right: 100px;
+
+  @include vp-1023 {
+    margin-right: 30px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.about__title {
+  margin-bottom: 10px;
+}
+
+.about__text {
+  margin-bottom: 40px;
+
+  &_closed span {
+    display: none;
+  }
+
+  &_opened span {
+    display: inline;
+  }
+
+  @include vp-1023 {
+    margin-bottom: 16px;
+  }
+}
+
+.about__button {
+  width: 180px;
+  justify-content: center;
+  padding: 14px 12px;
+  color: $color-deep-sky-blue;
+  background-color: #F8FDFF;
+  border: solid 1px $color-deep-sky-blue;
+
+  @include vp-767 {
+    padding: 8px 15px 10px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

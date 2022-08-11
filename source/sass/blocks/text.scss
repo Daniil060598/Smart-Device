@@ -2,4 +2,10 @@
   font-family: 'PT Mono';
   font-size: 16px;
   line-height: 22px;
+  margin: 0;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }

@@ -671,7 +671,7 @@ select {
 .page__body {
   width: 100%;
   height: 100%;
-  background-color: #FFFFFF;
+  background-color: #F8FDFF;
 }
 
 .title {
@@ -679,6 +679,7 @@ select {
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
+  margin: 0;
 }
 
 .title_big {
@@ -691,13 +692,14 @@ select {
 
 .title_small {
   font-size: 24px;
-  line-height: 140px;
+  line-height: 34px;
 }
 
 .text {
   font-family: 'PT Mono';
   font-size: 16px;
   line-height: 22px;
+  margin: 0;
 }
 
 .social__list {
@@ -723,10 +725,17 @@ select {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100%;
+  min-width: 320px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
   background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
-  min-width: 320px;
 }
 
 .header__wrapper {
@@ -943,7 +952,7 @@ select {
   max-width: 1260px;
   min-height: 880px;
   margin: 0 auto;
-  padding: 185px 377px 35px 125px;
+  padding: 305px 377px 35px 125px;
 }
 
 .main-screen__title {
@@ -966,6 +975,95 @@ select {
   padding: 15px 25px 18px;
   background-color: #00B2FF;
   border: none;
+}
+
+.advantages {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 120px 20px 60px;
+}
+
+.advantages__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item {
+  padding: 40px 45px 35px;
+  border: solid 1px #EBEBEB;
+  border-left: solid 5px #00B2FF;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.advantages__item:hover {
+  color: #F2F5F6;
+  background-color: #00B2FF;
+}
+
+.advantages__item:hover .advantages__item-icon {
+  fill: #F2F5F6;
+}
+
+.advantages__item:hover .advantages__item-title {
+  color: #F2F5F6;
+}
+
+.advantages__item-icon {
+  margin-bottom: 20px;
+  fill: #00B2FF;
+}
+
+.advantages__item-title {
+  margin-bottom: 15px;
+  color: #00B2FF;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 60px 20px 100px 0;
+}
+
+.about__img {
+  margin-right: 100px;
+}
+
+.about__title {
+  margin-bottom: 10px;
+}
+
+.about__text {
+  margin-bottom: 40px;
+}
+
+.about__text_closed span {
+  display: none;
+}
+
+.about__text_opened span {
+  display: inline;
+}
+
+.about__button {
+  width: 180px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 14px 12px;
+  color: #00B2FF;
+  background-color: #F8FDFF;
+  border: solid 1px #00B2FF;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1054,7 +1152,7 @@ select {
 
   .main-screen__wrapper {
     min-height: 640px;
-    padding: 80px 50px 35px;
+    padding: 180px 50px 35px;
   }
 
   .main-screen__title {
@@ -1067,6 +1165,26 @@ select {
 
   .main-screen__button {
     margin-left: 45px;
+  }
+
+  .advantages {
+    padding: 80px 50px 40px;
+  }
+
+  .advantages__item {
+    padding: 40px 30px 35px 45px;
+  }
+
+  .about {
+    padding: 40px 50px 80px 46px;
+  }
+
+  .about__img {
+    margin-right: 30px;
+  }
+
+  .about__text {
+    margin-bottom: 16px;
   }
 }
 
@@ -1087,6 +1205,16 @@ select {
   .title_big {
     font-size: 36px;
     line-height: 42px;
+  }
+
+  .title_small {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .text {
+    font-size: 14px;
+    line-height: 19px;
   }
 
   .header__wrapper {
@@ -1151,7 +1279,7 @@ select {
 
   .main-screen__wrapper {
     min-height: 560px;
-    padding: 80px 25px 35px;
+    padding: 150px 25px 35px;
   }
 
   .main-screen__text {
@@ -1164,6 +1292,33 @@ select {
     line-height: 16px;
     margin-left: 0;
     padding: 10px 30px;
+  }
+
+  .advantages {
+    padding: 50px 25px 25px;
+  }
+
+  .advantages__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .advantages__item {
+    padding: 30px 30px 35px;
+  }
+
+  .about {
+    padding: 25px 25px 80px;
+  }
+
+  .about__img {
+    display: none;
+  }
+
+  .about__button {
+    padding: 8px 15px 10px;
+    font-size: 14px;
+    line-height: 16px;
   }
 }
 

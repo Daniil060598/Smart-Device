@@ -1,5 +1,6 @@
 .about {
   display: flex;
+  align-items: flex-start;
   max-width: 1260px;
   margin: 0 auto;
   padding: 60px 20px 100px 0;
@@ -14,6 +15,7 @@
 }
 
 .about__img {
+  flex-shrink: 0;
   margin-right: 100px;
 
   @include vp-1023 {
@@ -32,12 +34,21 @@
 .about__text {
   margin-bottom: 40px;
 
-  &_closed span {
+  &_closed .hidden-text {
     display: none;
   }
 
   &_opened span {
-    display: inline;
+    display: block;
+  }
+
+  &_no-js span,
+  &_no-js .hidden-text {
+    display: block;
+  }
+
+  &_no-js ~ .about__button {
+    display: none;
   }
 
   @include vp-1023 {

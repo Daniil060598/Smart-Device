@@ -37,3 +37,25 @@
 .scroll-lock {
   overflow: hidden;
 }
+
+.mobile-hidden {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.mobile-display {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.desktop-display {
+  display: block;
+
+  @include vp-767 {
+    display: none;
+  }
+}

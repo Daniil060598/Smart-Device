@@ -1,6 +1,7 @@
 const showMore = () => {
   const textElement = document.querySelector('.about__text');
   const buttonElement = document.querySelector('.about__button');
+  textElement.classList.remove('about__text_no-js');
 
   buttonElement.addEventListener('click', () => {
     if (textElement.classList.contains('about__text_closed')) {

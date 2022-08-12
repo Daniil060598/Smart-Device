@@ -6,6 +6,7 @@
   width: 100%;
   min-width: 320px;
   background: linear-gradient(180deg, $color-black-pearl 84.9%, rgba(4, 24, 39, 0) 100%);
+  z-index: 10;
 }
 
 .header__wrapper {

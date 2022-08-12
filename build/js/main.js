@@ -9,6 +9,15 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   showMore();
+
+  // const productTitleElement = document.querySelector('.products__title');
+  // if (document.documentElement.clientWidth < 767) {
+  //   productTitleElement.textContent = 'Товары и услуги Smart Device';
+  // } else {
+  //   productTitleElement.textContent = 'Smart Device предлагает следующие товары и услуги';
+  // }
+
+
   // ---------------------------------
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

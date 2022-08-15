@@ -103,14 +103,15 @@
       </section>
       <section class="products">
         <div class="products__wrapper">
-          <h2 class="products__title title"><span class="desktop-display">Smart Device предлагает следующие товары и услуги</span><span class="mobile-display">Товары и услуги
-            Smart Device</span></h2>
+          <h2 class="products__title title"><span class="desktop-display">Smart Device предлагает следующие товары и
+              услуги</span><span class="mobile-display">Товары и услуги
+              Smart Device</span></h2>
           <ul class="products__list">
             <li class="products__item">
               <a href="#">
                 <picture>
                   <source type="image/webp" media="(max-width: 1023px)"
-                  srcset="img/products/product-tablet-1.webp 1x, img/products/product-tablet-1@2x.webp 2x">
+                    srcset="img/products/product-tablet-1.webp 1x, img/products/product-tablet-1@2x.webp 2x">
                   <source type="image/webp"
                     srcset="img/products/product-desktop-1.webp 1x, img/products/product-desktop-1@2x.webp 2x">
                   <source media="(max-width: 1023px)"
@@ -154,6 +155,32 @@
               </a>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="feedback__wrapper">
+          <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="get">
+            <h2 class="feedback__title title">Остались вопросы? Задайте их нам!</h2>
+            <p class="feedback__text text">Мы проконсультируем Вас бесплатно</p>
+            <div class="feedback__field form__field">
+              <label class="visually-hidden" for="name">Введите ваше имя</label>
+              <input type="text" id="name" name="name" placeholder="Имя" minlength="2" maxlength="50" required>
+            </div>
+            <div class="feedback__field form__field">
+              <label class="visually-hidden" for="tel">Введите ваш телефон</label>
+              <input type="tel" id="tel" name="tel" placeholder="Телефон" maxlength="18" required>
+            </div>
+            <div class="feedback__field feedback__field_textarea form__field">
+              <label class="visually-hidden" for="message"></label>
+              <textarea id="message" name="message" placeholder="Ваш вопрос" required></textarea>
+            </div>
+            <button class="feedback__form-button form__button button" type="submit">Задать вопрос</button>
+            <label class="feedback__control form__control">
+              <input class="form__control-input visually-hidden" type="checkbox" name="agreement" required>
+              <span class="form__control-mark"></span>
+              <span class="form__control-label">Я согласен на обработку персональных данных</span>
+            </label>
+          </form>
         </div>
       </section>
     </main>

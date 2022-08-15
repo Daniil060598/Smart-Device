@@ -1,0 +1,82 @@
+.form__field input,
+.form__field textarea {
+  font-family: 'PT Mono';
+  font-size: 16px;
+  line-height: 22px;
+  width: 100%;
+  background-color: #019BDF;
+  color: $color-default-white;
+  border: none;
+  border-radius: 3px;
+  transition: background-color $trans-default;
+
+  &::placeholder {
+    color: $color-default-white;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #019BDF;
+  }
+}
+
+.form__field input {
+  padding: 15px 15px 13px;
+}
+
+.form__field textarea {
+  width: 100%;
+  min-height: 155px;
+  padding: 25px 15px;
+}
+
+.form__button {
+  font-size: 16px;
+  line-height: 19px;
+  padding: 15px 25px 11px;
+  justify-content: center;
+  border: none;
+}
+
+.form__control {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.form__control-mark {
+  display: block;
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+  margin-right: 11px;
+  background-color: $color-deep-sky-blue;
+  border: solid 1px $color-default-white;
+  border-radius: 3px;
+  transition: border-color $trans-default;
+}
+
+.form__control-label {
+  font-family: 'PT Mono';
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.8;
+}
+
+.form__control-input + .form__control-mark {
+  cursor: pointer;
+}
+
+.form__control-input {
+  &:hover + .form__control-mark {
+    border-color: $color-black-pearl;
+  }
+
+  &:focus + .form__control-mark {
+    outline: solid 1px $color-black-pearl;
+  }
+
+  &:checked + .form__control-mark {
+    background: url("../img/svg/tick.svg") center no-repeat;
+  }
+}

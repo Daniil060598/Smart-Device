@@ -1,4 +1,5 @@
 import {showMore} from './show-more.js';
+import {validatePhone} from './phone-input.js';
 
 // ---------------------------------
 
@@ -9,6 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   showMore();
+  validatePhone();
 
   // const productTitleElement = document.querySelector('.products__title');
   // if (document.documentElement.clientWidth < 767) {

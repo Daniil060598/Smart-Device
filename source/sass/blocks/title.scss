@@ -5,6 +5,11 @@
   line-height: 51px;
   margin: 0;
 
+  @include vp-767 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
   &_big {
     font-weight: 700;
     font-size: 80px;

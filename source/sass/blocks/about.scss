@@ -5,25 +5,27 @@
   margin: 0 auto;
   padding: 60px 20px 100px 0;
 
+  &::before {
+    content: url('../img/2022.jpg');
+    margin-right: 100px;
+    width: 150px;
+    height: 320px;
+  }
+
   @include vp-1023 {
     padding: 40px 50px 80px 46px;
+
+    &::before {
+      margin-right: 30px;
+    }
   }
 
   @include vp-767 {
     padding: 25px 25px 80px;
-  }
-}
 
-.about__img {
-  flex-shrink: 0;
-  margin-right: 100px;
-
-  @include vp-1023 {
-    margin-right: 30px;
-  }
-
-  @include vp-767 {
-    display: none;
+    &::before {
+      display: none;
+    }
   }
 }
 
@@ -31,24 +33,37 @@
   margin-bottom: 10px;
 }
 
-.about__text {
+.about__text-wrapper {
   margin-bottom: 40px;
 
-  &_closed .hidden-text {
+  &_closed .about__text_hidden {
     display: none;
   }
 
-  &_opened span {
+  &_opened p {
     display: block;
   }
 
-  &_no-js span,
-  &_no-js .hidden-text {
+  &_no-js p,
+  &_no-js .about__text_hidden {
     display: block;
   }
 
   &_no-js ~ .about__button {
     display: none;
+  }
+
+  @include vp-767 {
+    margin-bottom: 16px;
+  }
+}
+
+.about__text {
+  margin-bottom: 20px;
+
+  &:first-child,
+  &:last-child {
+    margin-bottom: 0;
   }
 
   @include vp-1023 {

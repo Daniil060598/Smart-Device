@@ -1,5 +1,8 @@
-import {showMore} from './show-more.js';
+import {showMoreText} from './show-more.js';
 import {validatePhone} from './phone-input.js';
+import {initModals} from './init-modals.js';
+import {breakpointChecker, breakpoint} from './breakpoint-checker.js';
+import './accordion.js';
 
 // ---------------------------------
 
@@ -9,8 +12,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   // Modules
-  showMore();
+  showMoreText();
   validatePhone();
+  breakpointChecker(breakpoint);
 
   // const productTitleElement = document.querySelector('.products__title');
   // if (document.documentElement.clientWidth < 767) {
@@ -24,7 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-
+    initModals();
   });
 });
 

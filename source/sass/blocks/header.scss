@@ -5,7 +5,11 @@
   transform: translateX(-50%);
   width: 100%;
   min-width: 320px;
-  background: linear-gradient(180deg, $color-black-pearl 84.9%, rgba(4, 24, 39, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    $color-black-pearl 84.9%,
+    rgba(4, 24, 39, 0) 100%
+  );
   z-index: 10;
 }
 
@@ -19,12 +23,12 @@
 
   @include vp-1023 {
     min-height: 100px;
-    padding: 20px 70px 25px 50px;
+    padding: 20px 70px 25px 45px;
   }
 
   @include vp-767 {
     min-height: 70px;
-    padding: 15px 35px 20px 26px;
+    padding: 10px 35px 20px 26px;
   }
 }
 
@@ -37,9 +41,10 @@
   }
 
   @include vp-767 {
-    min-width: 55px;
-    width: 55px;
-    height: 55px;
+    margin-top: 5px;
+    min-width: 35px;
+    width: 35px;
+    height: 35px;
   }
 }
 
@@ -61,7 +66,7 @@
 
 .header__link {
   display: flex;
-  font-family: 'PT Mono';
+  font-family: $ff-pt-mono;
   font-size: 16px;
   line-height: 18px;
   color: $color-alice-blue;
@@ -117,5 +122,3 @@
     display: none;
   }
 }
-
-

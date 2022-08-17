@@ -1,7 +1,3 @@
-.social {
-
-}
-
 .social__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, 40px);
@@ -13,7 +9,7 @@
 
 .social__link {
   padding: 5px;
-  transition: opacity  $trans-default;
+  transition: opacity $trans-default;
 
   &:hover,
   &:focus {

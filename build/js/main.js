@@ -2,7 +2,7 @@ import {showMoreText} from './show-more.js';
 import {validatePhone} from './phone-input.js';
 import {initModals} from './init-modals.js';
 import {breakpointChecker, breakpoint} from './breakpoint-checker.js';
-import './accordion.js';
+import {addAccordion} from './accordion.js';
 
 // ---------------------------------
 
@@ -14,15 +14,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   showMoreText();
   validatePhone();
+  addAccordion();
   breakpointChecker(breakpoint);
-
-  // const productTitleElement = document.querySelector('.products__title');
-  // if (document.documentElement.clientWidth < 767) {
-  //   productTitleElement.textContent = 'Товары и услуги Smart Device';
-  // } else {
-  //   productTitleElement.textContent = 'Smart Device предлагает следующие товары и услуги';
-  // }
-
 
   // ---------------------------------
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

@@ -8,6 +8,9 @@
   <meta name="description" content="Описание проекта">
   <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptmono-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotocondensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotocondensed-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -17,7 +20,7 @@
         <a>
           <picture>
             <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
-            <img class="header__logo logo" width="204" height="55" src="img/svg/logo.svg" alt="Логотип">
+            <img class="header__logo logo" width="204" height="55" src="img/svg/logo.svg" alt="Логотип.">
           </picture>
         </a>
         <div class="header__contacts">
@@ -31,8 +34,8 @@
       <section class="main-screen">
         <div class="main-screen__wrapper">
           <h1 class="main-screen__title title title_big">Печатные платы</h1>
-          <p class="main-screen__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <button class="main-screen__button button">Получить бесплатную консультацию</button>
+          <p class="main-screen__text">производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
+          <a class="main-screen__button button" href="#feedback">Получить бесплатную консультацию</a>
         </div>
       </section>
       <section class="advantages">
@@ -44,7 +47,7 @@
             </svg>
             <h3 class="advantages__item-title title title_small">Оперативные сроки </h3>
             <p class="advantages__item-text text">Усовершенствованная логистическая система позволяет нам просчитывать
-              стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+              стоимость, производить и&nbsp;доставлять заказы плат и&nbsp;комплектующих в&nbsp;самые короткие сроки</p>
           </li>
           <li class="advantages__item">
             <svg class="advantages__item-icon" width="35" height="35">
@@ -52,7 +55,7 @@
             </svg>
             <h3 class="advantages__item-title title title_small">Крупные поставщики </h3>
             <p class="advantages__item-text text">Нашими поставщиками являются такие крупные мировые компании как:
-              OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспечивает хорошее качество нашей
+              OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с&nbsp;такими компаниями обеспечивает хорошее качество нашей
               продукции.
             </p>
           </li>
@@ -61,7 +64,7 @@
               <use xlink:href="img/sprite_auto.svg#advantages-icon-3"></use>
             </svg>
             <h3 class="advantages__item-title title title_small">Полная конфиденциальность </h3>
-            <p class="advantages__item-text text">По желанию клиента мы обеспечиваем полную конфиденциальность.
+            <p class="advantages__item-text text">По&nbsp;желанию клиента мы&nbsp;обеспечиваем полную конфиденциальность.
             </p>
           </li>
           <li class="advantages__item">
@@ -82,15 +85,17 @@
             <p class="about__text text">Мы поставляем электронные комплектующие,
               производим печатные
               платы и предоставляем
-              мировые
-              технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
-              Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
+              мировые технологии с 1997 года.
+              Выполняем срочные заказы и пилотные образцы до 10 дней.
             </p>
-            <p class="about__text mobile-hidden text">
-              Печатные
-              платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
-              РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
-              светотехники России.
+            <p class="about__text text">
+              Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
+              <span class="mobile-hidden">
+                Печатные
+                платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
+                РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
+                светотехники России.
+              </span>
             </p>
             <p class="about__text about__text_hidden text">
               Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых
@@ -99,7 +104,8 @@
               Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании.
               Использование инновационных технологий помогает экономить деньги и время наших клиентов
             </p>
-            <button class="about__button button">Подробнее</button>
+          </div>
+          <button class="about__button button">Подробнее</button>
         </div>
       </section>
       <section class="products">
@@ -115,10 +121,11 @@
                     srcset="img/products/product-desktop-1.webp 1x, img/products/product-desktop-1@2x.webp 2x">
                   <source media="(max-width: 1023px)"
                     srcset="img/products/product-tablet-1.jpg 1x, img/products/product-tablet-1@2x.jpg 2x">
+                    <!-- 1х: 350px; 2x: 700px -->
                   <img src="img/products/product-desktop-1.jpg" width="350" height="650"
                     srcset="img/products/product-desktop-1@2x.jpg 2x" alt="Печатная плата.">
                 </picture>
-                <h3 class="products__item-title">Производство печатных плат</h3>
+                <h3>Производство печатных плат</h3>
               </a>
             </li>
             <li class="products__item">
@@ -133,7 +140,7 @@
                   <img src="img/products/product-desktop-2.jpg" width="350" height="650"
                     srcset="img/products/product-desktop-2@2x.jpg 2x" alt="Печатная плата.">
                 </picture>
-                <h3 class="products__item-title">Монтаж печатных плат</h3>
+                <h3>Монтаж печатных плат</h3>
               </a>
             </li>
             <li class="products__item">
@@ -148,7 +155,7 @@
                   <img src="img/products/product-desktop-3.jpg" width="350" height="650"
                     srcset="img/products/product-desktop-3@2x.jpg 2x" alt="Печатная плата.">
                 </picture>
-                <h3 class="products__item-title">Комплектующие
+                <h3>Комплектующие
                   для
                   светотехники</h3>
               </a>
@@ -156,7 +163,7 @@
           </ul>
         </div>
       </section>
-      <section class="feedback">
+      <section class="feedback" id="feedback">
         <div class="feedback__wrapper">
           <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="get">
             <h2 class="feedback__title title">Остались вопросы? Задайте их нам!</h2>
@@ -171,7 +178,7 @@
             </div>
             <div class="feedback__field feedback__field_textarea form__field">
               <label class="visually-hidden" for="message">Введите ваш вопрос</label>
-              <textarea id="message" name="message" placeholder="Ваш вопрос" required></textarea>
+              <textarea id="message" name="message" placeholder="Ваш вопрос"></textarea>
             </div>
             <button class="feedback__form-button form__button button" type="submit">Задать вопрос</button>
             <label class="feedback__control form__control">
@@ -187,7 +194,7 @@
       <div class="footer__wrapper">
         <div class="footer__item footer__item_logo">
           <a>
-            <img class="footer__logo logo" width="204" height="55" src="img/svg/logo.svg" alt="Логотип">
+            <img class="footer__logo logo" width="204" height="55" src="img/svg/logo.svg" alt="Логотип.">
           </a>
           <div class="footer__social social">
             <h3 class="visually-hidden">Социальные сети</h3>
@@ -279,7 +286,7 @@
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
         <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
+          <svg width="20" height="20">
             <use xlink:href="img/sprite_auto.svg#icon-close"></use>
           </svg>
         </button>
@@ -287,16 +294,16 @@
         <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <form class="modal__form form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="form__field">
-            <label class="visually-hidden" for="name">Введите ваше имя</label>
+            <label class="visually-hidden" for="modal-name">Введите ваше имя</label>
             <input type="text" id="modal-name" name="name" placeholder="Имя" minlength="2" maxlength="50" required>
           </div>
           <div class="form__field">
-            <label class="visually-hidden" for="tel">Введите ваш телефон</label>
+            <label class="visually-hidden" for="modal-tel">Введите ваш телефон</label>
             <input type="tel" id="modal-tel" name="tel" placeholder="Телефон" maxlength="18" required>
           </div>
           <div class="form__field">
-            <label class="visually-hidden" for="message">Введите ваш вопрос</label>
-            <textarea id="modal-message" name="message" placeholder="Ваш вопрос" required></textarea>
+            <label class="visually-hidden" for="modal-message">Введите ваш вопрос</label>
+            <textarea id="modal-message" name="message" placeholder="Ваш вопрос"></textarea>
           </div>
           <button class="modal__button form__button button" type="submit">Отправить</button>
           <label class="form__control">

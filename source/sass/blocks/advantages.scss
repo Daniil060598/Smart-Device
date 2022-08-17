@@ -26,7 +26,8 @@
 }
 
 .advantages__item {
-  padding: 40px 45px 35px;
+  min-height: 300px;
+  padding: 40px 40px 35px;
   border: solid 1px $color-whisper;
   border-left: solid 5px $color-deep-sky-blue;
   transition: $trans-default;
@@ -45,20 +46,35 @@
   }
 
   @include vp-1023 {
-    padding: 40px 30px 35px 45px;
+    min-height: 360px;
+    padding: 40px 30px 27px 40px;
   }
 
   @include vp-767 {
-    padding: 30px 30px 35px;
+    min-height: 340px;
+    padding: 30px 30px 35px 25px;
   }
 }
 
 .advantages__item-icon {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   fill: $color-deep-sky-blue;
+
+  @include vp-1023 {
+    margin-bottom: 7px;
+  }
+
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .advantages__item-title {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   color: $color-deep-sky-blue;
+
+  @include vp-1023 {
+    margin-bottom: 10px;
+  }
 }

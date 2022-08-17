@@ -39,13 +39,13 @@
     display: block;
     height: 285px;
     width: 510px;
-    background: url("../img/paper-airplane.jpg") left no-repeat;
+    background: url("../img/paper-airplane.png") left no-repeat;
     z-index: -1;
   }
 
   @include vp-1023 {
     min-height: 580px;
-    padding: 50px 50px 125px;
+    padding: 45px 50px 109px;
     align-items: stretch;
 
     &::after {
@@ -54,7 +54,7 @@
   }
 
   @include vp-767 {
-    padding: 50px 25px 90px;
+    padding: 47px 25px 88px;
   }
 }
 
@@ -78,25 +78,42 @@
 
 .feedback__title {
   grid-column: 1 / 3;
-  margin-bottom: 9px;
+  margin-bottom: 12px;
+
+  @include vp-1023 {
+    margin-bottom: 7px;
+  }
 
   @include vp-767 {
     grid-column: 1 / 2;
-    margin-bottom: 5px;
+    font-size: 30px;
+    line-height: 42px;
   }
 }
 
 .feedback__text {
   grid-column: 1 / 3;
   margin-bottom: 33px;
+  padding-left: 5px;
+
+  @include vp-1023 {
+    margin-bottom: 25px;
+    padding-left: 0;
+  }
 
   @include vp-767 {
+    margin-bottom: 34px;
     grid-column: 1 / 2;
   }
 }
 
 .feedback__field {
   margin-bottom: 20px;
+  padding-left: 5px;
+
+  @include vp-1023 {
+    padding-left: 0;
+  }
 }
 
 .feedback__field_textarea {
@@ -104,29 +121,47 @@
 
   @include vp-767 {
     grid-column: 1 / 2;
-    min-height: 180px;
   }
 }
 
 .feedback__field_textarea textarea {
+  @include vp-1023 {
+    padding: 32px 15px 20px;
+  }
+
   @include vp-767 {
+    padding-top: 23px;
     min-height: 180px;
   }
 }
 
 .feedback__form-button {
-  margin-top: 35px;
+  margin-top: 9px;
+  margin-left: 5px;
   max-width: 265px;
 
+  @include vp-1023 {
+    margin-top: 8px;
+    margin-left: 0;
+  }
+
   @include vp-767 {
-    margin-top: 10px;
+    max-width: 100%;
+    margin-top: 3px;
   }
 }
 
 .feedback__control {
-  margin-top: 50px;
+  margin-top: 24px;
+  padding-left: 15px;
+
+  @include vp-1023 {
+    margin-top: 17px;
+    padding-left: 0;
+  }
 
   @include vp-767 {
+    padding-left: 5px;
     margin-top: 25px;
   }
 }

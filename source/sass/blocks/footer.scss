@@ -1,28 +1,29 @@
 .footer {
   background-color: $color-black-pearl;
-  min-width: 320px;
 }
 
 .footer__wrapper {
   display: grid;
-  grid-template-columns: minmax(min-content, 345px) minmax(min-content, 470px) minmax(min-content,
-      335px);
-  gap: 30px;
+  grid-template-columns: minmax(min-content, 345px) minmax(min-content, 470px) minmax(
+      min-content,
+      335px
+    );
+  gap: 32px;
   max-width: 1260px;
   margin: 0 auto;
-  padding: 50px 20px 55px 20px;
+  padding: 50px 15px 40px;
   color: $color-default-white;
 
   @include vp-1023 {
     grid-template-columns: 1fr 1fr;
     row-gap: 35px;
     column-gap: 30px;
-    padding: 50px 50px 65px;
+    padding: 50px 45px 63px;
   }
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    padding: 45px 0 35px;
+    padding: 35px 0;
     row-gap: 0;
   }
 }
@@ -48,21 +49,45 @@
     grid-column: 1 / 2;
     flex-direction: column;
     align-items: center;
-    padding: 20px 25px;
+    padding: 0 25px 22px;
   }
 }
 
 .footer__logo {
-  min-width: 215px;
-  margin-bottom: 30px;
+  width: 215px;
+  height: 55px;
+  margin-bottom: 35px;
+
+  @include vp-1023 {
+    margin-bottom: 0;
+  }
+
+  @include vp-767 {
+    padding-right: 15px;
+  }
 }
 
 .footer__social {
-  padding-left: 5px;
+  padding-left: 15px;
 
   @include vp-1023 {
+    padding-top: 10px;
     padding-left: 0;
     min-width: 150px;
+  }
+
+  @include vp-767 {
+    padding-top: 20px;
+  }
+}
+
+.footer__item_nav {
+  @include vp-1023 {
+    padding-left: 5px;
+  }
+
+  @include vp-767 {
+    padding-left: 0;
   }
 }
 
@@ -72,8 +97,12 @@
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin: 5px 0 20px;
+  margin: 6px 0 20px;
   color: $color-default-white;
+
+  @include vp-1023 {
+    margin: 2px 0 22px;
+  }
 
   @include vp-767 {
     margin: 0;
@@ -88,10 +117,14 @@
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @include vp-1023 {
+    row-gap: 5px;
+  }
 }
 
 .footer__nav-item a {
-  font-family: "PT Mono";
+  font-family: $ff-pt-mono;
   line-height: 22px;
   color: #ffffff70;
   transition: color $trans-default;
@@ -103,18 +136,37 @@
 }
 
 .footer__address {
+  font-family: $ff-pt-mono;
+  line-height: 22px;
   color: #ffffff70;
   margin-bottom: 10px;
+
+  @include vp-1023 {
+    margin-bottom: 6px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 0 17px;
+  }
 }
 
 .footer__tel {
+  font-family: $ff-pt-mono;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   color: #ffffff70;
   transition: color $trans-default;
 
   &:hover,
   &:focus {
     color: $color-default-white;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 5px;
   }
 }

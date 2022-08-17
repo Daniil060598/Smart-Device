@@ -1,10 +1,10 @@
 .form__field input,
 .form__field textarea {
-  font-family: 'PT Mono';
+  font-family: $ff-pt-mono;
   font-size: 16px;
   line-height: 22px;
   width: 100%;
-  background-color: #019BDF;
+  background-color: #019bdf;
   color: $color-default-white;
   border: none;
   border-radius: 3px;
@@ -16,7 +16,7 @@
 
   &:hover,
   &:focus {
-    background-color: darken(#019BDF, 10%);
+    background-color: darken(#019bdf, 10%);
   }
 }
 
@@ -57,7 +57,7 @@
 }
 
 .form__control-label {
-  font-family: 'PT Mono';
+  font-family: $ff-pt-mono;
   font-size: 14px;
   line-height: 16px;
   opacity: 0.8;

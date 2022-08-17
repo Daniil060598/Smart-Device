@@ -419,7 +419,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
 }
 
 a {
@@ -482,6 +481,8 @@ select {
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100vh;
+  /* stylelint-disable-next-line */
+  min-height: calc(100 * var(--vh, 1vh));
 }
 
 .wrapper .header,
@@ -1835,6 +1836,7 @@ select {
   }
 
   .products__title {
+    padding-right: 10px;
     margin-bottom: 29px;
   }
 
@@ -1845,6 +1847,7 @@ select {
   }
 
   .products__item h3 {
+    max-width: 170px;
     font-size: 18px;
     top: 25px;
     left: 30px;

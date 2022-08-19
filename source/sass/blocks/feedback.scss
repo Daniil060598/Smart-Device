@@ -109,10 +109,10 @@
 
 .feedback__field {
   margin-bottom: 20px;
-  padding-left: 5px;
+  margin-left: 5px;
 
   @include vp-1023 {
-    padding-left: 0;
+    margin-left: 0;
   }
 }
 

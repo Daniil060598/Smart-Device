@@ -46,6 +46,7 @@
 
 .products__item {
   position: relative;
+  transition: opacity $trans-default;
 
   &::after {
     content: "";
@@ -57,6 +58,10 @@
     height: 60px;
     background: #00b2ff url("../img/svg/arrow.svg") center no-repeat;
     border-top-left-radius: 3px;
+  }
+
+  &:hover {
+    opacity: 0.5;
   }
 
   @include vp-767 {

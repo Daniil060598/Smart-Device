@@ -12,17 +12,16 @@
   border: 1px solid $color-alice-blue;
   border-radius: 3px;
   cursor: pointer;
-  transition: opacity $trans-default;
+  transition: $trans-default;
+  user-select: none;
 
   &:disabled {
     opacity: 0.5;
     pointer-events: none;
   }
 
-  @media (hover: hover), screen and (min-width: 0\0) {
-    &:hover,
-    &:focus {
-      opacity: 0.8;
-    }
+  &:hover,
+  &:focus {
+    opacity: 0.8;
   }
 }

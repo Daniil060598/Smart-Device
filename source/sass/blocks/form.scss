@@ -11,11 +11,12 @@
   transition: background-color $trans-default;
 
   &::placeholder {
-    color: $color-default-white;
+    color: darken($color-default-white, 20%);
   }
 
   &:hover,
   &:focus {
+    color: $color-default-white;
     background-color: darken(#019bdf, 10%);
   }
 }

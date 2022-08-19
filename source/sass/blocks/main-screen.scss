@@ -60,7 +60,7 @@
 .main-screen__button {
   font-size: 18px;
   line-height: 21px;
-  padding: 15px 25px 18px;
+  padding: 14px 27px 18px;
   background-color: #00b2ff;
   border: none;
 
@@ -70,7 +70,7 @@
 
   @include vp-767 {
     justify-content: center;
-    min-width: 270px;
+    width: 100%;
     font-size: 14px;
     line-height: 16px;
     margin-left: 0;

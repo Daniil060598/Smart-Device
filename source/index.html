@@ -17,10 +17,10 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__wrapper">
-        <a>
+        <a class="header__logo">
           <picture>
             <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
-            <img class="header__logo logo" width="204" height="55" src="img/svg/logo.svg" alt="Логотип.">
+            <img class="header__logo-img logo" width="204" height="55" src="img/svg/logo.svg" alt="Логотип.">
           </picture>
         </a>
         <div class="header__contacts">
@@ -46,17 +46,17 @@
               <use xlink:href="img/sprite_auto.svg#advantages-icon-1"></use>
             </svg>
             <h3 class="advantages__item-title title title_small">Оперативные сроки</h3>
-            <p class="advantages__item-text text">Усовершенствованная логистическая система позволяет нам просчитывать
-              стоимость, производить и&nbsp;доставлять заказы плат и&nbsp;комплектующих в&nbsp;самые короткие сроки</p>
+            <p class="advantages__item-text text">
+              Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и&nbsp;доставлять заказы плат и&nbsp;комплектующих в&nbsp;самые короткие сроки
+            </p>
           </li>
           <li class="advantages__item">
             <svg class="advantages__item-icon" width="35" height="35">
               <use xlink:href="img/sprite_auto.svg#advantages-icon-2"></use>
             </svg>
             <h3 class="advantages__item-title title title_small">Крупные поставщики</h3>
-            <p class="advantages__item-text text">Нашими поставщиками являются такие крупные мировые компании как:
-              OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с&nbsp;такими компаниями обеспечивает хорошее качество нашей
-              продукции.
+            <p class="advantages__item-text text">
+              Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с&nbsp;такими компаниями обеспечивает хорошее качество нашей продукции.
             </p>
           </li>
           <li class="advantages__item">
@@ -64,50 +64,38 @@
               <use xlink:href="img/sprite_auto.svg#advantages-icon-3"></use>
             </svg>
             <h3 class="advantages__item-title title title_small">Полная конфиденциальность</h3>
-            <p class="advantages__item-text text">По&nbsp;желанию клиента мы&nbsp;обеспечиваем полную конфиденциальность.
+            <p class="advantages__item-text text">
+              По&nbsp;желанию клиента мы&nbsp;обеспечиваем полную конфиденциальность.
             </p>
           </li>
           <li class="advantages__item">
-            <svg class="advantages__item-icon" width="35" height="35" role="img">
+            <svg class="advantages__item-icon" width="35" height="35">
               <use xlink:href="img/sprite_auto.svg#advantages-icon-4"></use>
             </svg>
             <h3 class="advantages__item-title title title_small">Персонализация стоимости</h3>
-            <p class="advantages__item-text text">Мы&nbsp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы
-              установить ту&nbsp;цену, которая Вас устраивает.
+            <p class="advantages__item-text text">
+              Мы&nbsp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту&nbsp;цену, которая Вас устраивает.
             </p>
           </li>
         </ul>
       </section>
       <section class="about">
-        <div>
-          <h2 class="about__title title">О компании</h2>
-          <div class="about__text-wrapper about__text-wrapper_closed about__text-wrapper_no-js">
-            <p class="about__text text">
-              Мы&nbsp;поставляем электронные комплектующие,
-              производим печатные
-              платы и&nbsp;предоставляем
-              мировые технологии с&nbsp;1997&nbsp;года.
-              Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.
-            </p>
-            <p class="about__text text">
-              Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-              <span class="mobile-hidden">
-                Печатные
-                платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД),
-                РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
-                светотехники России.
-              </span>
-            </p>
-            <p class="about__text about__text_hidden text">
-              Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых
-              продолжают сотрудничество по&nbsp;сей день. На&nbsp;дынный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20
-              городов присутствия.
-              Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании.
-              Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов
-            </p>
-          </div>
-          <button class="about__button button">Подробнее</button>
+        <h2 class="about__title title">О компании</h2>
+        <div class="about__text-wrapper about__text-wrapper_closed about__text-wrapper_no-js">
+          <p>
+            Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.
+          </p>
+          <p>
+            Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
+            <span class="mobile-hidden">
+              Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
+            </span>
+          </p>
+          <p class="more-text">
+            Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20 городов присутствия. Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов.
+          </p>
         </div>
+        <button class="about__button button">Подробнее</button>
       </section>
       <section class="products">
         <div class="products__wrapper">
@@ -115,49 +103,38 @@
           <ul class="products__list">
             <li class="products__item">
               <a href="#">
-                <picture>
-                  <source type="image/webp" media="(max-width: 1023px)"
-                    srcset="img/products/product-tablet-1.webp 1x, img/products/product-tablet-1@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/products/product-desktop-1.webp 1x, img/products/product-desktop-1@2x.webp 2x">
-                  <source media="(max-width: 1023px)"
-                    srcset="img/products/product-tablet-1.jpg 1x, img/products/product-tablet-1@2x.jpg 2x">
-                    <!-- 1х: 350px; 2x: 700px -->
-                  <img src="img/products/product-desktop-1.jpg" width="350" height="650"
-                    srcset="img/products/product-desktop-1@2x.jpg 2x" alt="Печатная плата.">
-                </picture>
                 <h3>Производство печатных плат</h3>
+                <picture>
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/product-tablet-1.webp 1x, img/products/product-tablet-1@2x.webp 2x">
+                  <source type="image/webp" srcset="img/products/product-desktop-1.webp 1x, img/products/product-desktop-1@2x.webp 2x">
+                  <source media="(max-width: 1023px)" srcset="img/products/product-tablet-1.jpg 1x, img/products/product-tablet-1@2x.jpg 2x">
+                  <!-- 1х: 350px; 2x: 700px -->
+                  <img src="img/products/product-desktop-1.jpg" width="350" height="650" srcset="img/products/product-desktop-1@2x.jpg 2x" alt="Печатная плата.">
+                </picture>
               </a>
             </li>
             <li class="products__item">
               <a href="#">
-                <picture>
-                  <source type="image/webp" media="(max-width: 1023px)"
-                    srcset="img/products/product-tablet-2.webp 1x, img/products/product-tablet-2@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/products/product-desktop-2.webp 1x, img/products/product-desktop-2@2x.webp 2x">
-                  <source media="(max-width: 1023px)"
-                    srcset="img/products/product-tablet-2.jpg 1x, img/products/product-tablet-2@2x.jpg 2x">
-                  <img src="img/products/product-desktop-2.jpg" width="350" height="650"
-                    srcset="img/products/product-desktop-2@2x.jpg 2x" alt="Печатная плата.">
-                </picture>
                 <h3>Монтаж печатных&nbsp;плат</h3>
+                <picture>
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/product-tablet-2.webp 1x, img/products/product-tablet-2@2x.webp 2x">
+                  <source type="image/webp" srcset="img/products/product-desktop-2.webp 1x, img/products/product-desktop-2@2x.webp 2x">
+                  <source media="(max-width: 1023px)" srcset="img/products/product-tablet-2.jpg 1x, img/products/product-tablet-2@2x.jpg 2x">
+                  <!-- 1х: 350px; 2x: 700px -->
+                  <img src="img/products/product-desktop-2.jpg" width="350" height="650" srcset="img/products/product-desktop-2@2x.jpg 2x" alt="Печатная плата.">
+                </picture>
               </a>
             </li>
             <li class="products__item">
               <a href="#">
+                <h3>Комплектующие для&nbsp;светотехники</h3>
                 <picture>
-                  <source type="image/webp" media="(max-width: 1023px)"
-                    srcset="img/products/product-tablet-3.webp 1x, img/products/product-tablet-3@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/products/product-desktop-3.webp 1x, img/products/product-desktop-3@2x.webp 2x">
-                  <source media="(max-width: 1023px)"
-                    srcset="img/products/product-tablet-3.jpg 1x, img/products/product-tablet-3@2x.jpg 2x">
-                  <img src="img/products/product-desktop-3.jpg" width="350" height="650"
-                    srcset="img/products/product-desktop-3@2x.jpg 2x" alt="Печатная плата.">
+                  <source type="image/webp" media="(max-width: 1023px)"  srcset="img/products/product-tablet-3.webp 1x, img/products/product-tablet-3@2x.webp 2x">
+                  <source type="image/webp" srcset="img/products/product-desktop-3.webp 1x, img/products/product-desktop-3@2x.webp 2x">
+                  <source media="(max-width: 1023px)" srcset="img/products/product-tablet-3.jpg 1x, img/products/product-tablet-3@2x.jpg 2x">
+                  <!-- 1х: 350px; 2x: 700px -->
+                  <img src="img/products/product-desktop-3.jpg" width="350" height="650" srcset="img/products/product-desktop-3@2x.jpg 2x" alt="Печатная плата.">
                 </picture>
-                <h3>Комплектующие
-                  для&nbsp;светотехники</h3>
               </a>
             </li>
           </ul>
@@ -174,7 +151,7 @@
             </div>
             <div class="feedback__field form__field">
               <label class="visually-hidden" for="tel">Введите ваш телефон</label>
-              <input type="tel" id="tel" name="tel" placeholder="Телефон" maxlength="18" required>
+              <input type="tel" id="tel" name="tel" placeholder="Телефон" pattern=".{18,20}" title="Неполный номер телефона" required>
             </div>
             <div class="feedback__field feedback__field_textarea form__field">
               <label class="visually-hidden" for="message">Введите ваш вопрос</label>
@@ -198,7 +175,7 @@
           </a>
           <div class="footer__social social">
             <h3 class="visually-hidden">Социальные сети</h3>
-            <ul class="social__list">
+            <ul class="footer__social-list social__list">
               <li class="social__item">
                 <a class="social__link" href="#">
                   <svg class="social__link-icon" width="30" height="30">
@@ -232,27 +209,29 @@
               <h3 class="footer__item-title">Разделы сайта</h3>
             </a>
             <div class="accordion-item__content">
-              <nav class="footer__nav">
-                <ul class="footer__nav-list">
-                  <li class="footer__nav-item">
+              <nav class="footer-nav">
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item">
                     <a href="#">О Компании</a>
                   </li>
-                  <li class="footer__nav-item">
+                  <li class="footer-nav__item">
                     <a href="#">Продукты</a>
                   </li>
-                  <li class="footer__nav-item">
+                  <li class="footer-nav__item">
                     <a href="#">Производство печатных плат</a>
                   </li>
-                  <li class="footer__nav-item">
+                  <li class="footer-nav__item">
                     <a href="#">Монтаж печатных плат</a>
                   </li>
-                  <li class="footer__nav-item">
+                </ul>
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item">
                     <a href="#">Комплектующие</a>
                   </li>
-                  <li class="footer__nav-item">
+                  <li class="footer-nav__item">
                     <a href="#">Доставка</a>
                   </li>
-                  <li class="footer__nav-item">
+                  <li class="footer-nav__item">
                     <a href="#">Контакты</a>
                   </li>
                 </ul>
@@ -266,12 +245,18 @@
               <h3 class="footer__item-title">Наш офис</h3>
             </a>
             <div class="accordion-item__content">
-              <p class="footer__address">
-                г. Мытищи, Олимпийский проспект, д.10
-              </p>
-              <a class="footer__tel" href="tel:+74955894050">+7 (495) 589-40-50</a>
-              <a class="footer__tel" href="tel:+79253895829">+7 (925) 389-58-29</a>
-              <a class="footer__tel" href="tel:+79253647813">+7 (925) 364-78-13</a>
+              <p class="footer__address">г. Мытищи, Олимпийский проспект, д.10</p>
+              <ul class="footer__tel-list">
+                <li class="footer__tel-item">
+                  <a href="tel:+74955894050">+7 (495) 589-40-50</a>
+                </li>
+                <li class="footer__tel-item">
+                  <a href="tel:+79253895829">+7 (925) 389-58-29</a>
+                </li>
+                <li class="footer__tel-item">
+                  <a href="tel:+79253647813">+7 (925) 364-78-13</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -299,7 +284,7 @@
           </div>
           <div class="form__field">
             <label class="visually-hidden" for="modal-tel">Введите ваш телефон</label>
-            <input type="tel" id="modal-tel" name="tel" placeholder="Телефон" maxlength="18" required>
+            <input type="tel" id="modal-tel" name="tel" placeholder="Телефон" pattern=".{18,20}" title="Неполный номер телефона" required>
           </div>
           <div class="form__field">
             <label class="visually-hidden" for="modal-message">Введите ваш вопрос</label>

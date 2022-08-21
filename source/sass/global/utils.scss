@@ -33,7 +33,13 @@
 }
 
 .scroll-lock {
-  overflow: hidden;
+  overflow-y: scroll;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  scroll-behavior: auto;
 }
 
 .no-scrollbar {

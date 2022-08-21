@@ -83,6 +83,7 @@
   min-height: 610px;
   padding: 38px 40px 40px;
   background-color: $color-deep-sky-blue;
+  border-radius: 3px;
 
   @include vp-767 {
     width: 100%;

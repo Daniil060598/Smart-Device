@@ -18,6 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const mainScreenButtonElement = document.querySelector('.main-screen__button');
   const breakpoint = window.matchMedia('(max-width:767px)');
   const form = document.querySelector('.form');
+  const body = document.body;
 
   // Utils
   // ---------------------------------
@@ -106,7 +107,6 @@ window.addEventListener('DOMContentLoaded', () => {
     // iPad on iOS 13 detection
     || (navigator.userAgent.includes('Mac') && 'ontouchend' in document);
   };
-
   // scroll-lock
   class ScrollLock {
     constructor() {
@@ -129,8 +129,11 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     disableScrolling() {
-      document.body.classList.add(this._lockClass);
-
+      let pagePosition = window.scrollY;
+      body.dataset.position = pagePosition;
+      body.style.top = -pagePosition + 'px';
+      body.classList.add(this._lockClass);
+      document.documentElement.style.scrollBehavior = 'auto';
       const observer = new MutationObserver(() => {
         let inDom = document.body.contains(document.querySelector('.modal.is-active'));
         if (!inDom) {
@@ -141,7 +144,12 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     enableScrolling() {
+      let pagePosition = parseInt(body.dataset.position, 10);
+      body.style.top = 'auto';
       document.body.classList.remove(this._lockClass);
+      window.scroll({top: pagePosition, left: 0});
+      document.documentElement.style.scrollBehavior = '';
+      body.removeAttribute('data-position');
     }
   }
 

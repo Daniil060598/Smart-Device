@@ -91,18 +91,23 @@
   }
 }
 
-.feedback__text {
+.feedback__form p {
+  font-family: $ff-pt-mono;
+  font-size: 16px;
+  line-height: 22px;
   grid-column: 1 / 3;
-  margin-bottom: 33px;
+  margin: 0 0 33px;
   padding-left: 5px;
 
   @include vp-1023 {
-    margin-bottom: 25px;
+    margin: 0 0 25px;
     padding-left: 0;
   }
 
   @include vp-767 {
-    margin-bottom: 34px;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0 0 34px;
     grid-column: 1 / 2;
   }
 }

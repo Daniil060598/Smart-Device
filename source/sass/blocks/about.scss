@@ -67,7 +67,7 @@
   }
 }
 
-.about__text-wrapper_closed .more-text {
+.about__text-wrapper_closed p:last-child {
   display: none;
 }
 
@@ -77,8 +77,7 @@
 }
 
 .about__text-wrapper_no-js p,
-.about__text-wrapper_no-js span,
-.about__text-wrapper_no-js .more-text {
+.about__text-wrapper_no-js span {
   display: block;
 }
 

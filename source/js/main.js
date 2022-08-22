@@ -17,7 +17,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const productTitleElement = document.querySelector('.products__title');
   const mainScreenButtonElement = document.querySelector('.main-screen__button');
   const breakpoint = window.matchMedia('(max-width:767px)');
-  const form = document.querySelector('.form');
   const body = document.body;
 
   // Utils
@@ -535,13 +534,15 @@ window.addEventListener('DOMContentLoaded', () => {
     })
   );
 
-  form.addEventListener('submit', () => {
-    const inputName = document.getElementById('name');
-    const inputTel = document.getElementById('tel');
-    const inputMessage = document.getElementById('message');
-    localStorage.setItem('name', inputName.value);
-    localStorage.setItem('tel', inputTel.value);
-    localStorage.setItem('message', inputMessage.value);
+  document.querySelectorAll('.form').forEach((item) => {
+    item.addEventListener('submit', () => {
+      const inputName = item.querySelector('[data-input-name]');
+      const inputTel = item.querySelector('[data-input-tel]');
+      const inputMessage = item.querySelector('[data-input-message]');
+      localStorage.setItem('name', inputName.value);
+      localStorage.setItem('tel', inputTel.value);
+      localStorage.setItem('message', inputMessage.value);
+    });
   });
 
   showMoreText();

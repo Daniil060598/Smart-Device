@@ -34,7 +34,7 @@
       <section class="main-screen">
         <div class="main-screen__wrapper">
           <h1 class="main-screen__title title title_big">Печатные платы</h1>
-          <p class="main-screen__text">производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
+          <p>производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
           <a class="main-screen__button button" href="#feedback">Получить бесплатную консультацию</a>
         </div>
       </section>
@@ -91,7 +91,7 @@
               Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
             </span>
           </p>
-          <p class="more-text">
+          <p>
             Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20 городов присутствия. Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов.
           </p>
         </div>
@@ -140,22 +140,22 @@
           </ul>
         </div>
       </section>
-      <section class="feedback">
+      <section class="feedback" id="feedback">
         <div class="feedback__wrapper">
           <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="get">
             <h2 class="feedback__title title">Остались вопросы? Задайте их&nbsp;нам!</h2>
-            <p class="feedback__text text">Мы&nbsp;проконсультируем Вас бесплатно</p>
+            <p>Мы&nbsp;проконсультируем Вас бесплатно</p>
             <div class="feedback__field form__field">
               <label class="visually-hidden" for="name">Введите ваше имя</label>
-              <input type="text" id="name" name="name" placeholder="Имя" minlength="2" maxlength="50" required>
+              <input type="text" id="name" name="name" placeholder="Имя" minlength="2" maxlength="50" data-input-name required>
             </div>
             <div class="feedback__field form__field">
               <label class="visually-hidden" for="tel">Введите ваш телефон</label>
-              <input type="tel" id="tel" name="tel" placeholder="Телефон" pattern=".{18,20}" title="Неполный номер телефона" required>
+              <input type="tel" id="tel" name="tel" placeholder="Телефон" pattern=".{17,20}" title="Неполный номер телефона" data-input-tel required>
             </div>
             <div class="feedback__field feedback__field_textarea form__field">
               <label class="visually-hidden" for="message">Введите ваш вопрос</label>
-              <textarea id="message" name="message" placeholder="Ваш вопрос"></textarea>
+              <textarea id="message" name="message" placeholder="Ваш вопрос" data-input-message></textarea>
             </div>
             <button class="feedback__form-button form__button button" type="submit">Задать вопрос</button>
             <label class="feedback__control form__control">
@@ -245,7 +245,7 @@
               <h3 class="footer__item-title">Наш офис</h3>
             </a>
             <div class="accordion-item__content">
-              <p class="footer__address">г. Мытищи, Олимпийский проспект, д.10</p>
+              <p>г. Мытищи, Олимпийский проспект, д.10</p>
               <ul class="footer__tel-list">
                 <li class="footer__tel-item">
                   <a href="tel:+74955894050">+7 (495) 589-40-50</a>
@@ -276,19 +276,19 @@
           </svg>
         </button>
         <h2 class="modal__title">Закажите звонок</h2>
-        <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <form class="modal__form form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="form__field">
             <label class="visually-hidden" for="modal-name">Введите ваше имя</label>
-            <input type="text" id="modal-name" name="name" placeholder="Имя" minlength="2" maxlength="50" required>
+            <input type="text" id="modal-name" name="name" placeholder="Имя" minlength="2" maxlength="50" data-input-name required>
           </div>
           <div class="form__field">
             <label class="visually-hidden" for="modal-tel">Введите ваш телефон</label>
-            <input type="tel" id="modal-tel" name="tel" placeholder="Телефон" pattern=".{18,20}" title="Неполный номер телефона" required>
+            <input type="tel" id="modal-tel" name="tel" placeholder="Телефон" pattern=".{17,20}" title="Неполный номер телефона" data-input-tel required>
           </div>
           <div class="form__field">
             <label class="visually-hidden" for="modal-message">Введите ваш вопрос</label>
-            <textarea id="modal-message" name="message" placeholder="Ваш вопрос"></textarea>
+            <textarea id="modal-message" name="message" placeholder="Ваш вопрос" data-input-message></textarea>
           </div>
           <button class="modal__button form__button button" type="submit">Отправить</button>
           <label class="form__control">

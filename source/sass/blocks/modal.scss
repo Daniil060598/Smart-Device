@@ -79,7 +79,6 @@
 .modal__content {
   position: relative;
   width: 500px;
-  min-width: 320px;
   min-height: 610px;
   padding: 38px 40px 40px;
   background-color: $color-deep-sky-blue;
@@ -119,7 +118,7 @@
   color: $color-default-white;
 }
 
-.modal__text {
+.modal__content p {
   font-family: $ff-pt-mono;
   font-size: 16px;
   line-height: 22px;

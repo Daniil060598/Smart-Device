@@ -992,13 +992,34 @@ select {
   width: 100%;
   max-width: 480px;
   padding: 15px 0 0 12px;
-  margin-right: 45px;
+  margin: 0 45px 0 0;
+  list-style: none;
 }
 
-.header__link {
+.header__contacts-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.header__contacts-item::before {
+  content: "";
+  display: block;
+  min-width: 20px;
+  min-height: 20px;
+  margin-right: 15px;
+  background: center no-repeat;
+}
+
+.header__contacts-item_email::before {
+  background-image: url("../img/svg/email.svg");
+}
+
+.header__contacts-item_tel::before {
+  background-image: url("../img/svg/phone-call.svg");
+}
+
+.header__contacts-item a {
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   line-height: 18px;
@@ -1008,26 +1029,9 @@ select {
   transition: opacity 0.3s ease;
 }
 
-.header__link::before {
-  content: "";
-  display: block;
-  min-width: 20px;
-  min-height: 20px;
-  margin-right: 15px;
-  background: center no-repeat;
-}
-
-.header__link:hover,
-.header__link:focus {
+.header__contacts-item a:hover,
+.header__contacts-item a:focus {
   opacity: 0.5;
-}
-
-.header__link_email::before {
-  background-image: url("../img/svg/email.svg");
-}
-
-.header__link_tel::before {
-  background-image: url("../img/svg/phone-call.svg");
 }
 
 .header__button {
@@ -1425,7 +1429,7 @@ select {
 }
 
 .feedback__form p {
-  font-family: 'PT Mono';
+  font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   line-height: 22px;
   -ms-grid-column: 1;
@@ -1492,18 +1496,18 @@ select {
     padding: 0;
   }
 
-  .header__link {
+  .header__contacts-item {
     min-width: 40px;
     min-height: 40px;
   }
 
-  .header__link::before {
+  .header__contacts-item::before {
     width: 40px;
     height: 40px;
     margin-right: 0;
   }
 
-  .header__link span {
+  .header__contacts-item span {
     display: none;
   }
 
@@ -1769,7 +1773,7 @@ select {
   .accordion-item__trigger {
     position: relative;
     display: block;
-    padding: 22px 25px;
+    padding: 22px 45px 22px 25px;
     -webkit-transition: opacity 0.3s ease;
     -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
@@ -1968,7 +1972,7 @@ select {
   }
 
   .about__button {
-    max-width: 160px;
+    width: 100%;
     padding: 8px 15px 10px;
     font-size: 14px;
     line-height: 16px;
@@ -2065,6 +2069,10 @@ select {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
+  }
+
+  .about__button {
+    width: 160px;
   }
 }
 

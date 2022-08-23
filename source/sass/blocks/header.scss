@@ -61,7 +61,8 @@
   width: 100%;
   max-width: 480px;
   padding: 15px 0 0 12px;
-  margin-right: 45px;
+  margin: 0 45px 0 0;
+  list-style: none;
 
   @include vp-1023 {
     grid-template-columns: repeat(auto-fit, 40px);
@@ -72,13 +73,8 @@
   }
 }
 
-.header__link {
+.header__contacts-item {
   display: flex;
-  font-family: $ff-pt-mono;
-  font-size: 16px;
-  line-height: 18px;
-  color: $color-alice-blue;
-  transition: opacity $trans-default;
 
   &::before {
     content: "";
@@ -87,11 +83,6 @@
     min-height: 20px;
     margin-right: 15px;
     background: center no-repeat;
-  }
-
-  &:hover,
-  &:focus {
-    opacity: 0.5;
   }
 
   @include vp-1023 {
@@ -106,18 +97,31 @@
   }
 }
 
-.header__link span {
-  @include vp-1023 {
-    display: none;
-  }
-}
-
-.header__link_email::before {
+.header__contacts-item_email::before {
   background-image: url("../img/svg/email.svg");
 }
 
-.header__link_tel::before {
+.header__contacts-item_tel::before {
   background-image: url("../img/svg/phone-call.svg");
+}
+
+.header__contacts-item a {
+  font-family: $ff-pt-mono;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-alice-blue;
+  transition: opacity $trans-default;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.header__contacts-item span {
+  @include vp-1023 {
+    display: none;
+  }
 }
 
 .header__button {

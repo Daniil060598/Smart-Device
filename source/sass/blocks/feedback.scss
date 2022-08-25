@@ -27,7 +27,7 @@
   max-width: 1260px;
   min-height: 840px;
   margin: 0 auto;
-  padding: 165px 35px 100px 20px;
+  padding: 165px 35px 100px 550px;
   color: $color-default-white;
   z-index: 2;
 
@@ -144,6 +144,8 @@
   margin-top: 9px;
   margin-left: 5px;
   max-width: 265px;
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
 
   @include vp-1023 {
     margin-top: 8px;
@@ -153,6 +155,7 @@
   @include vp-767 {
     max-width: 100%;
     margin-top: 3px;
+    grid-row: 6 / 7;
   }
 }
 

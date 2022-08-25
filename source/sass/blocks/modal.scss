@@ -126,3 +126,7 @@
   margin: 0 0 38px;
   color: $color-default-white;
 }
+
+.form__control {
+  grid-row: 5 / 6;
+}

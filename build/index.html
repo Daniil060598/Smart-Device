@@ -161,12 +161,12 @@
               <label class="visually-hidden" for="message">Введите ваш вопрос</label>
               <textarea id="message" name="message" placeholder="Ваш вопрос" data-input-message></textarea>
             </div>
-            <button class="feedback__form-button form__button button" type="submit">Задать вопрос</button>
             <label class="feedback__control form__control">
               <input class="form__control-input visually-hidden" type="checkbox" name="agreement" required>
               <span class="form__control-mark"></span>
               <span class="form__control-label">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
             </label>
+            <button class="feedback__form-button form__button button" type="submit">Задать вопрос</button>
           </form>
         </div>
       </section>
@@ -284,7 +284,7 @@
         <form class="modal__form form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="form__field">
             <label class="visually-hidden" for="modal-name">Введите ваше имя</label>
-            <input type="text" id="modal-name" name="name" placeholder="Имя" minlength="2" maxlength="50" data-input-name required>
+            <input type="text" id="modal-name" name="name" placeholder="Имя" minlength="2" maxlength="50" data-input-name data-focus required>
           </div>
           <div class="form__field">
             <label class="visually-hidden" for="modal-tel">Введите ваш телефон</label>
@@ -294,12 +294,12 @@
             <label class="visually-hidden" for="modal-message">Введите ваш вопрос</label>
             <textarea id="modal-message" name="message" placeholder="Ваш вопрос" data-input-message></textarea>
           </div>
-          <button class="modal__button form__button button" type="submit">Отправить</button>
           <label class="form__control">
             <input class="form__control-input visually-hidden" type="checkbox" name="agreement" required>
             <span class="form__control-mark"></span>
             <span class="form__control-label">Я согласен на обработку персональных данных</span>
           </label>
+          <button class="modal__button form__button button" type="submit">Отправить</button>
         </form>
       </div>
     </div>

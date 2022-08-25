@@ -39,7 +39,7 @@
   list-style: none;
 
   @include vp-1023 {
-    grid-template-columns: minmax(auto, 670px);
+    grid-template-columns: 1fr;
     gap: 30px;
   }
 }

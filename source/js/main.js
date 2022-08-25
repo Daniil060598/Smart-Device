@@ -22,6 +22,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
   // focus-lock
+
+  // ios-checker
   class FocusLock {
     constructor() {
       this._lockedSelector = null;
@@ -75,7 +77,9 @@ window.addEventListener('DOMContentLoaded', () => {
         this._endElement.blur();
       }
       if (startElement && startFocus) {
-        startElement.focus();
+        setTimeout(() => {
+          startElement.focus();
+        }, 100);
       }
       document.addEventListener('keydown', this._documentKeydownHandler);
     }
@@ -92,8 +96,6 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   window.focusLock = new FocusLock();
-
-  // ios-checker
   const iosChecker = () => {
     return [
       'iPad Simulator',
@@ -385,8 +387,8 @@ window.addEventListener('DOMContentLoaded', () => {
       }, 100);
     });
     modals = new Modals(settings);
-    // Используйте в разработке экспортируемую переменную modals, window сделан для бэкэнда
     window.modals = modals;
+    // Используйте в разработке экспортируемую переменную modals, window сделан для бэкэнда
   };
 
   // show-more-text
@@ -451,33 +453,28 @@ window.addEventListener('DOMContentLoaded', () => {
         }
         return input.value;
       }
+      // Russian phone numberh);
+      let firstSymbols = (inputNumbersValue[0] === '8') ? '8' : '+7';
+      formattedInputValue = firstSymbols + ' ';
 
-      if (['7', '8', '9'].indexOf(inputNumbersValue[0]) > -1) {
-        // Russian phone number
-        if (inputNumbersValue[0] === '9') {
-          inputNumbersValue = '7' + inputNumbersValue;
-        }
+      if (inputNumbersValue.length === 1) {
+        formattedInputValue += '(' + inputNumbersValue[0];
+      }
 
-        let firstSymbols = (inputNumbersValue[0] === '8') ? '8' : '+7';
-        formattedInputValue = firstSymbols + ' ';
-        if (inputNumbersValue.length > 1) {
-          formattedInputValue += '(' + inputNumbersValue.substring(1, 4);
-        }
+      if (inputNumbersValue.length > 1) {
+        formattedInputValue += '(' + inputNumbersValue.substring(1, 4);
+      }
 
-        if (inputNumbersValue.length >= 5) {
-          formattedInputValue += ') ' + inputNumbersValue.substring(4, 7);
-        }
+      if (inputNumbersValue.length >= 5) {
+        formattedInputValue += ') ' + inputNumbersValue.substring(4, 7);
+      }
 
-        if (inputNumbersValue.length >= 8) {
-          formattedInputValue += ' ' + inputNumbersValue.substring(7, 9);
-        }
+      if (inputNumbersValue.length >= 8) {
+        formattedInputValue += ' ' + inputNumbersValue.substring(7, 9);
+      }
 
-        if (inputNumbersValue.length >= 10) {
-          formattedInputValue += ' ' + inputNumbersValue.substring(9, 11);
-        }
-
-      } else {
-        input.value = formattedInputValue;
+      if (inputNumbersValue.length >= 10) {
+        formattedInputValue += ' ' + inputNumbersValue.substring(9, 11);
       }
 
       input.value = formattedInputValue;
@@ -492,7 +489,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const onPhoneKeyDown = function (evt) {
       // Clear input after remove last symbol
       let inputValue = evt.target.value.replace(/\D/g, '');
-      if (evt.keyCode === 8 && inputValue.length === 1) {
+      if (evt.keyCode === 8 && inputValue.length === 2) {
         evt.target.value = '';
       }
     };

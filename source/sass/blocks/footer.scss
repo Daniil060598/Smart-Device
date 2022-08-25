@@ -132,14 +132,9 @@
   }
 
   @include vp-767 {
-    text-align: end;
     font-size: 14px;
     line-height: 18px;
     margin: 0 0 17px;
-  }
-
-  @include vp-320 {
-    text-align: start;
   }
 }
 
@@ -147,16 +142,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-
-  @include vp-767 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  @include vp-320 {
-    align-items: flex-start;
-  }
 }
 
 .footer__tel-item {

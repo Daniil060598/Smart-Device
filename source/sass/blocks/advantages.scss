@@ -16,7 +16,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  align-items: start;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -54,6 +53,11 @@
   @include vp-767 {
     min-height: 340px;
     padding: 30px 30px 35px 25px;
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      min-height: 325px;
+    }
   }
 }
 

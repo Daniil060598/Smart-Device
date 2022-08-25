@@ -3,32 +3,12 @@
   grid-template-columns: repeat(auto-fit, 220px);
   column-gap: 30px;
   row-gap: 5px;
-
-  @include vp-767 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  @include vp-320 {
-    align-items: flex-start;
-  }
 }
 
 .footer-nav__list {
-  display: flex;
-  flex-direction: column;
   padding: 0;
   margin: 0;
   list-style: none;
-
-  @include vp-767 {
-    align-items: flex-end;
-  }
-
-  @include vp-320 {
-    align-items: flex-start;
-  }
 }
 
 .footer-nav__item {

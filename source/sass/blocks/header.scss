@@ -11,6 +11,10 @@
     rgba(4, 24, 39, 0) 100%
   );
   z-index: 10;
+
+  @include vp-1023 {
+    position: absolute;
+  }
 }
 
 .header__wrapper {
@@ -73,8 +77,14 @@
   }
 }
 
-.header__contacts-item {
-  display: flex;
+
+.header__contacts-item a {
+  display: inline-flex;
+  font-family: $ff-pt-mono;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-alice-blue;
+  transition: opacity $trans-default;
 
   &::before {
     content: "";
@@ -95,27 +105,19 @@
       margin-right: 0;
     }
   }
-}
-
-.header__contacts-item_email::before {
-  background-image: url("../img/svg/email.svg");
-}
-
-.header__contacts-item_tel::before {
-  background-image: url("../img/svg/phone-call.svg");
-}
-
-.header__contacts-item a {
-  font-family: $ff-pt-mono;
-  font-size: 16px;
-  line-height: 18px;
-  color: $color-alice-blue;
-  transition: opacity $trans-default;
 
   &:hover,
   &:focus {
     opacity: 0.5;
   }
+}
+
+.header__contacts-item_email a::before {
+  background-image: url("../img/svg/email.svg");
+}
+
+.header__contacts-item_tel a::before {
+  background-image: url("../img/svg/phone-call.svg");
 }
 
 .header__contacts-item span {

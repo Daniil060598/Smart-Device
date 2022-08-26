@@ -21,34 +21,22 @@
 
 .feedback__wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
   position: relative;
   max-width: 1260px;
   min-height: 840px;
   margin: 0 auto;
-  padding: 165px 35px 100px 550px;
+  padding: 165px 35px 100px 20px;
   color: $color-default-white;
-  z-index: 2;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 246px;
-    left: 20px;
-    display: block;
-    height: 285px;
-    width: 510px;
-    background: url("../img/paper-airplane.png") left no-repeat;
-    z-index: -1;
-  }
 
   @include vp-1023 {
     min-height: 580px;
     padding: 45px 50px 109px;
     align-items: stretch;
 
-    &::after {
+    &::before {
       display: none;
     }
   }
@@ -58,9 +46,20 @@
   }
 }
 
+.feedback__img {
+  flex: 1 1 auto;
+  padding-top: 80px;
+  margin-right: 50px;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
 .feedback__form {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
   max-width: 585px;
   align-items: flex-start;
   padding-left: 5px;

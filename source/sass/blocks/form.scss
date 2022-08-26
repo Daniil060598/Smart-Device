@@ -74,7 +74,7 @@
   }
 
   &:focus + .form__control-mark {
-    outline: solid 1px $color-black-pearl;
+    outline: solid 2px $color-black-pearl;
   }
 
   &:checked + .form__control-mark {

@@ -706,7 +706,7 @@ select {
   color: #ffffff;
 }
 
-.form__control {
+.modal__control {
   -ms-grid-row: 5;
   -ms-grid-row-span: 1;
   grid-row: 5 / 6;
